@@ -13,13 +13,9 @@ async function getTasks(id: string) {
 export default async function todoPage({params}: PageProps) {
     const todo = await getTasks(params.id)
     return (
-        <div>
-            {todo.id}
-            <br/>
-            {todo.topic}
-            <button>
-                click me
-            </button>
+        <div className="p-5 text-center">
+           <h1 className="">{todo.topic}</h1>
+            <p className="">{todo.description}</p>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import { Fragment, useState, FormEvent } from 'react'
 import { useRouter } from 'next/navigation';
 
 export default function Create() {
-  const [topic, setTopic] = useState("work");
+  const [topic, setTopic] = useState("");
   const [description, setDescription] = useState("")
   const router = useRouter();
 
